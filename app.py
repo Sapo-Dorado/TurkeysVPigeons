@@ -1,7 +1,6 @@
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse
 from starlette.templating import Jinja2Templates
-from flask import render_template
 import aiohttp
 import uvicorn
 
