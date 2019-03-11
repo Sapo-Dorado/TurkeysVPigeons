@@ -2,7 +2,6 @@ starlette
 aiohttp
 uvicorn
 fastai
-numpy
 jinja2
 requests
 python-multipart
