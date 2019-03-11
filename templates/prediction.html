@@ -1,8 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Prediction</h3>
-<p> {{prediction}}</p>
-<p> Turkey probability: {{turkey}}</p>
-<p>Pigeon probability: {{pigeon}}</p>
-
+{% if prediction == 'Turkey' %}
+    <body style="background-color:PaleTurquoise;">
+        <h3>Prediction</h3>
+        <p> {{prediction}}</p>
+        <p>Turkey probability: {{turkey}}</p>
+        <p>Pigeon probability: {{pigeon}}</p>
+    </body>
+{% else %}
+    <body style="background-color:LightSlateGrey">
+        <h3>Prediction</h3>
+        <p> {{prediction}}</p>
+        <p>Pigeon probability: {{pigeon}}</p>
+        <p>Turkey probability: {{turkey}}</p>
+    </body>
+{% endif %}
 {% endblock %}
